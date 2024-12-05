@@ -1,0 +1,137 @@
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    background-color: #1c1c1c;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info {
+    flex: 1;
+    padding: 2rem;
+    color: #ccc;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul li i {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    background: #333;
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: #555;
+    outline: none;
+    transform: scale(1.02);
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    background: #e74c3c;
+    border: none;
+    padding: 0.8rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(231, 76, 60, 0.4);
+}
+
+/* Background Decoration */
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(0, 0, 0, 0.8));
+    z-index: -1;
+}

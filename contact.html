@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="home">
+        <header>
+            <div class="container">
+                <div class="left">
+                    <a href="index.html" class="logo">progym</a>
+                    <div class="hm-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Have questions? Reach out, and we’ll be happy to help!</p>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> contact@progym.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Gym St., Fitness City</li>
+                </ul>
+            </div>
+
+            <!-- Contact Form Section -->
+            <form method="POST" action="sendmail.php" class="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" required placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" name="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Newsletter Section -->
+        <div class="container newsletter">
+            <div class="newsletter-content">
+                <h1>Subscribe To Our Newsletter</h1>
+                <p>Stay in touch with the latest news and releases</p>
+                <form>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Links Section -->
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <a class="logo-link" href="#">Progym</a>
+                    <p>
+                        Worlds best gym, named after world's biggest influencer "proGym". This gym is in his name and 10% of our earnings go towards charity and cancer research.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Properties</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="#">How It Works</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <p><a href="#">FAQs</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="copy-right">
+                &copy; <script>document.write(new Date().getFullYear());</script> ProGym - All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
