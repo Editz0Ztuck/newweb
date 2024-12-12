@@ -1,3 +1,6 @@
+*{
+    background-color: #1c1c1c;
+}
 /* Contact Section */
 .contact-section {
     display: flex;
@@ -135,3 +138,45 @@ button[type="submit"]:hover {
     background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(0, 0, 0, 0.8));
     z-index: -1;
 }
+/* Navbar Styling */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #1c1c1c; /* Match your website's background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modern-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    filter: invert(0.9);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #e74c3c;
+  }
+   /* Hello */
