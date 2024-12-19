@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Åssiden IT</title>
     <link rel="stylesheet" href="style.css">
+    <title>Åssiden IT</title>
+    
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Bilder/videor/Åssiden-logo.png" alt="School Logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">Hjem</a></li>
+            <li><a href="#students">Elever</a></li>
+            <li><a href="#teachers">Lærere</a></l
+            <li><a href="#projects">Prosjekter</a></li>
+            <li><a href="#about">Om Oss</a></li>
+            <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Velkommen til Åssiden IT</h1>
+        <p>Din fremtid i IT begynner her! Utforsk våre elever, lærere og prosjekter.</p>
+    </header>
+
+    <!-- Students Section -->
+    <section id="students" class="section">
+        <h2>Elever</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Bilder/student1.jpg" alt="Student 1">
+                <h3>Student 1</h3>
+                <p>Ønsker å bli: Utvikler</p>
+                <a href="cv-student1.pdf" target="_blank">Se CV</a>
+            </div>
+            <!-- Add more student cards here -->
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="section">
+        <h2>Lærere</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Bilder/teacher1.jpg" alt="Teacher 1">
+                <h3>Teacher 1</h3>
+                <p>Fagområde: IT-drift</p>
+                <p>Erfaring: 10 år</p>
+            </div>
+            <!-- Add more teacher cards here -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Prosjekter</h2>
+        <p>Vi jobber med innovative prosjekter som utvikler våre ferdigheter og skaper løsninger for fremtiden.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="Bilder/project1.jpg" alt="Project 1">
+                <h3>Prosjekt 1</h3>
+                <p>Beskrivelse av prosjektet og hva vi lærte.</p>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>Om Oss</h2>
+        <div class="about-grid">
+            <img src="Bilder/about.jpg" alt="Om Oss">
+            <div>
+                <h3>Hva vi jobber med</h3>
+                <p>På Åssiden IT Programfag lærer vi alt fra IT-drift til utvikling av moderne applikasjoner. Vi jobber med spennende prosjekter som involverer webutvikling, datanettverk og sikkerhet.</p>
+                <h3>Eksempler på prosjekter</h3>
+                <p>Våre elever har utviklet responsive nettsider for lokale bedrifter, automatisert prosesser med Python, og bygget prototyper av IoT-enheter.</p>
+                <a class="about-button" href="about_us.html">Les Mer</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Åssiden IT Programfag. Alle rettigheter forbeholdt.</p>
+    </footer>
+
+    <script>
+        // Add smooth scroll for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
