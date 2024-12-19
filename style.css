@@ -23,6 +23,7 @@ body {
 
 .navbar .logo img {
     height: 50px;
+    filter: invert(1);
 }
 
 .navbar ul {
@@ -88,6 +89,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    background-color: #1f1f1f;
 }
 
 /* Card Styles */
@@ -287,3 +289,174 @@ background-color: red;
 
 }
   /* marcel to prawilny goscpozdro */                    
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.EleverBider-grid {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.EleverBider-grid .header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.EleverBider-grid .header .subheading {
+    color: #777;
+    font-style: italic;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.EleverBider-item {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.EleverBider-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.EleverBider-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.EleverBider-item .overlay .icon {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.EleverBider-item:hover .overlay {
+    opacity: 1;
+}
+
+.EleverBider-item .caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.EleverBider-item .caption h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.EleverBider-item .caption p {
+    color: #fff;
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: gray;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Small gap between items */
+    padding: 10px;
+}
+
+.EleverBider-item {
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.EleverBider-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.EleverBider-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.caption h4 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 1em;
+    color: #777;
+}
