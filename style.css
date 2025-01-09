@@ -270,24 +270,61 @@ button[type="submit"]:active {
     transform: scale(0.98);
 }
 
-/* Footer */
+
+
+/*===================FOOTER==================*/
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1c1c1c;
-    color: #cccccc;
+    background: #2C2E3A;
+    padding-top: 5rem;
     font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
-footer p {
-    margin: 0;
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
 }
 
-h1 {
-
-background-color: red;
-
+.footer__container > div h4 {
+    margin-bottom: 1.2rem;
 }
+
+.footer__1 p {
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+    list-style: none;
+}
+
+footer ul li a {
+   color: #fff;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+
   /* marcel to prawilny goscpozdro */                    
   body {
     font-family: Arial, sans-serif;
